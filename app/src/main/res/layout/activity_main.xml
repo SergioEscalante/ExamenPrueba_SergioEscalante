@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/listView1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/Ib_1"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="69dp"
+                        android:src="@drawable/img1"
+                        android:onClick="img1"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/Ib_2"
+                        android:layout_alignTop="@+id/Ib_1"
+                        android:layout_toEndOf="@+id/Ib_1"
+                        android:src="@drawable/img2"
+                        android:onClick="img2" />
+
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/Ib_3"
+                        android:layout_below="@+id/Ib_1"
+                        android:layout_alignStart="@+id/Ib_1"
+                        android:src="@drawable/img3"
+                        android:onClick="img3" />
+
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/Ib_4"
+                        android:layout_below="@+id/Ib_2"
+                        android:layout_toEndOf="@+id/Ib_3"
+                        android:src="@drawable/img4"
+                        android:onClick="img4" />
+
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/Ib_5"
+                        android:layout_below="@+id/Ib_3"
+                        android:layout_alignStart="@+id/Ib_3"
+                        android:src="@drawable/img5"
+                        android:onClick="img5" />
+
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/Ib_6"
+                        android:layout_below="@+id/Ib_4"
+                        android:layout_toEndOf="@+id/Ib_3"
+                        android:src="@drawable/img6"
+                        android:onClick="img6" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</RelativeLayout>

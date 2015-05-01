@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.examenprueba" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".img1"
+            android:label="@string/title_activity_img1" >
+        </activity>
+        <activity
+            android:name=".img2"
+            android:label="@string/title_activity_img2" >
+        </activity>
+        <activity
+            android:name=".img3"
+            android:label="@string/title_activity_img3" >
+        </activity>
+        <activity
+            android:name=".img4"
+            android:label="@string/title_activity_img4" >
+        </activity>
+        <activity
+            android:name=".img5"
+            android:label="@string/title_activity_img5" >
+        </activity>
+        <activity
+            android:name=".img6"
+            android:label="@string/title_activity_img6" >
+        </activity>
+        <activity
+            android:name=".listrow"
+            android:label="@string/title_activity_listrow" >
+        </activity>
+    </application>
+
+</manifest>
